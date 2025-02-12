@@ -1,0 +1,54 @@
+
+header{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+}
+header nav {
+    position: absolute;
+    right: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+header nav ul li {
+    list-style: none;
+}
+header figure   {
+    margin: 10px;
+}
+
+.img{
+    position: relative;
+    margin-top: 40px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/asset/home-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section p {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+section button {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.signup{
+    position: absolute;
+    left: 30%;
+
+}
