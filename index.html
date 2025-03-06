@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Gmail</title>
 </head>
 <body>
-
     <header>
         <figure>
-            <img src="/asset/mail.png">
+          <a href="#"><img src="./asset/mail.png" alt="Gmail logo" title="Google Gmail"></a>
+          <figcaption hidden>Logo Gmail</figcaption>
         </figure>
-
-        <h1>Gmail</h1>
-
+        <h1><a href="#">Gmail</a></h1>
         <nav>
-            <ul>
-                <li>Pour les Pros</li>
-                <li>Connexion</li>
-                <li>Cree un compte</li>
-            </ul>
+          <ul>
+            <li><a href="#">POUR LES PROS</a></li>
+            <li><a href="connexion.html">CONNEXION</a></li>
+            <li class="create-acc"><a href="#">CREER UN COMPTE</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-<main>
-    <section class="img">
-       <p>
-           Retrouver la fluidité et la simplicité de gmail sur tous vos appareil
-       </p>
-        <button>Cree un compte</button>
-    </section>
+<main> 
 
-    <section class = "signup"> 
-        <p> Une boite de reception entiérement repensée</p>
-        <h2>Créer un compte</h2>
+    <section class="section-home">
+
+        <p>Retrouvez la fluidité et la <br> simplicité de Gmail sur <br> vos appareils </p>
+
+        <a href="#form-down" class="boutton">Créer un compte</a>
+
+        <figure>
+          <figcaption hidden>Image vers le bas</figcaption>
+
+          <a href="#formu">
+            <img src="./asset/arrow.png" alt="fleche">
+          </a>
+
+        </figure>
+      </section>
+
+
+
+
+    <section class = "form" id="formu"> 
+        <h2>Une boite de réception entièrement repensée</h2>
+        <p>Avec les nouveaux onglets personnalisables, repérez immédiatement les nouveaux messages et choisissez ceux que vous souhaiter lire en priorité</p>
         <fieldset>
-            <form action="#">
+            <legend>Créer un compte</legend>
+            <form action="#" method="post">
             <label for="nom">Nom *</label>
             <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
 
@@ -44,9 +57,9 @@
             <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
 
             <label for="email">Mail *</label>
-            <input type="email" id="email" name="email" placeholder="giusmili67@gmail.com" required>
+            <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
 
-            <label for="password">Choisir votre mot de passe *</label>
+            <label for="password">mot de passe *</label>
             <input type="password" id="password" name="password" required>
 
             <button type="submit">VALIDER VOTRE COMPTE</button>

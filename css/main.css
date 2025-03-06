@@ -1,54 +1,186 @@
+@import url(./reset.css);
+:root{
+    --button : #dd5347;
+    --bgcolor : #fafafa;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
 
 header{
-    height: 40px;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
     display: flex;
-    background-color: #fff;
+    background-color: #ffff;
     align-items: center;
-}
-header nav {
+    box-shadow: 0 2px 6px #0000001f,inset 0 -1px #dadce0;
+  }
+  header figure{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+  header figure img{
+    width: 100%;
+  }
+  header h1{
+    font-size: 2.3rem;
+    margin-left: 5px;
+    color: #62666B;
+    font-weight: 400;
+  }
+  header nav{
     position: absolute;
     right: 0;
-}
-
-header nav ul {
+  }
+  header nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-}
-header nav ul li {
-    list-style: none;
-}
-header figure   {
-    margin: 10px;
-}
+  }
+  header nav ul li{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    transition: .3s ease-in-out;
+  
+  }
 
-.img{
+  
+  header nav ul .create-acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--button);
+    color: #ffff;
+  }
+
+
+  /* Section home */
+  .section-home{
+    margin-top: 50px;
     position: relative;
-    margin-top: 40px;
-    height: 100vh;
     width: 100%;
-    background-image: url("/asset/home-hero.jpg");
+    height: 100vh;
+    background-image: url(../asset/home-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-section p {
+  }
+  .section-home p{
     position: absolute;
-    top: 20%;
-    left: 10%;
-}
-section button {
+    top: 17%;
+    left: 8%;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ffff;
+  }
+  .section-home .boutton{
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 46%;
+    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--button);
+    color: #ffff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  /* Down arrow */
+  .section-home figure{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    background-color: var(--button);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .section-home figure img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+  }
+  
+  .section-home figure:hover{
+    transform: scale(1.1);
+  }
+
+.form{
+
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.signup{
-    position: absolute;
-    left: 30%;
+.form h2{
+    width: 300px;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.form p {
+    width: 450px;
+    font-size: 1.7rem;
 
 }
+
+.form form{
+    width: 700px;
+    margin-bottom: 20px;
+  }
+  .form form fieldset{
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .form form legend{
+    font-size: 2.3rem;
+    font-weight: 300;
+  }
+  .form form label{
+    font-size: 1.7rem;
+  }
+  .form form input{
+    width: 95%;
+    height: 30px;
+    background-color: #F8F5F5;
+    border: solid 1px #d1d0d0 ;
+    border-radius: 5px;
+  }
+  .form form button{
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-top: 20px;
+    background-color: #1A73E8;
+    font-size: 1.6rem;
+    height: 40px;
+    color: #ffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .form form input{
+    font-size: 1.7rem;
+  }
