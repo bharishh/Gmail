@@ -31,11 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ':pwd' => $hashedPassword,
             ]);
 
-            header('Location: index.php');
+            header('Location: connexion.php');
             exit;
         }
     } else {
-        $error = 'Champs vides!!';
+        $error = 'Veuillez remplir les champs !'; 
     }
 }
+
 ?>
